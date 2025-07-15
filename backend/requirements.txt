@@ -1,0 +1,7 @@
+Flask>=2.0
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-JWT-Extended
+psycopg2-binary   # PostgreSQL driver
+Werkzeug
+python-dotenv
