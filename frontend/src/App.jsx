@@ -10,6 +10,8 @@ import BillingDashboard from './features/billing/BillingDashboard';
 import AdminDashboard from './features/admin/AdminDashboard';
 import ExecutiveDashboard from './features/executive/ExecutiveDashboard';
 import HRDashboard from './features/hr/HRDashboard';
+import AuthorizationForm from './features/authorizations/AuthorizationForm';
+import PatientForm from './features/patients/PatientForm';
 
 export default function App() {
   return (
@@ -63,6 +65,22 @@ export default function App() {
             <HRDashboard />
           </ProtectedRoute>
         } />
+
+        <Route
+          path="/dashboard/therapist/new-authorization"
+          element={
+          <ProtectedRoute allowedRoles={['Therapist']}>
+          <AuthorizationForm />
+          </ProtectedRoute>
+        } />
+
+        <Route
+          path="/dashboard/admin/new-patient" 
+          element={ 
+          <ProtectedRoute allowedRoles={['Admin Staff']}> 
+            <PatientForm /> 
+          </ProtectedRoute> 
+          } />
 
 
 
