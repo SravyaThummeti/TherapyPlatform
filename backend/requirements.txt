@@ -5,3 +5,4 @@ Flask-JWT-Extended
 psycopg2-binary   # PostgreSQL driver
 Werkzeug
 python-dotenv
+marshmallow==3.19.0

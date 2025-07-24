@@ -1,0 +1,101 @@
+[Folder] TherapyPlatformSravya
+    .gitignore
+    commands
+    folder_structure.py
+    folder_structure.txt
+    [Folder] backend
+        .env
+        requirements.txt
+        wsgi.py
+        __init__.py
+        [Folder] common
+            exceptions.py
+            logger.py
+            middleware.py
+            validators.py
+            [Folder] __pycache__
+                validators.cpython-311.pyc
+        [Folder] core
+            app.py
+            config.py
+            database.py
+            extensions.py
+            __init__.py
+            [Folder] __pycache__
+                app.cpython-311.pyc
+                config.cpython-311.pyc
+                extensions.cpython-311.pyc
+                __init__.cpython-311.pyc
+        [Folder] migrations
+            alembic.ini
+            env.py
+            README
+            script.py.mako
+            [Folder] versions
+                374da63ad950_init.py
+                6561b105adda_increase_password_hash_column_length_to_.py
+                [Folder] __pycache__
+                    374da63ad950_init.cpython-311.pyc
+                    6561b105adda_increase_password_hash_column_length_to_.cpython-311.pyc
+            [Folder] __pycache__
+                env.cpython-311.pyc
+        [Folder] modules
+            __init__.py
+            [Folder] auth
+                dto.py
+                models.py
+                routes.py
+                services.py
+                __init__.py
+                [Folder] tests
+                [Folder] __pycache__
+                    models.cpython-311.pyc
+                    routes.cpython-311.pyc
+                    __init__.cpython-311.pyc
+            [Folder] referrals
+            [Folder] __pycache__
+                __init__.cpython-311.pyc
+        [Folder] scripts
+        [Folder] __pycache__
+            wsgi.cpython-311.pyc
+            __init__.cpython-311.pyc
+    [Folder] frontend
+        package-lock.json
+        package.json
+        [Folder] public
+            index.html
+        [Folder] src
+            App.jsx
+            index.js
+            [Folder] api
+                auth.js
+            [Folder] components
+                Button.jsx
+                ProtectedRoute.jsx
+            [Folder] context
+                AuthContext.js
+            [Folder] features
+                [Folder] admin
+                    AdminDashboard.jsx
+                [Folder] auth
+                    authSlice.js
+                    Login.jsx
+                    Register.jsx
+                [Folder] billing
+                    BillingDashboard.jsx
+                [Folder] executive
+                    ExecutiveDashboard.jsx
+                [Folder] hr
+                    HRDashboard.jsx
+                [Folder] practiceManager
+                    PracticeManagerDashboard.jsx
+                [Folder] therapist
+                    TherapistDashboard.jsx
+            [Folder] pages
+                NotFound.jsx
+            [Folder] styles
+                globsl.css
+                variable.css
+            [Folder] utils
+                formatDate.js
+Total number of files: 65
