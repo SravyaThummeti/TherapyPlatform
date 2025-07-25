@@ -18,6 +18,7 @@ export default function Login() {
       // Flask-JWT-Extended v4 encodes identity under 'sub'
       const role = payload?.sub?.role;  // use 'sub' claim
       const normalized = role.toLowerCase().replace(/ /g, '-');
+      console.log(normalized);
       navigate(`/dashboard/${normalized}`);
     } catch (err) {
       alert(err.response?.data?.msg || 'Login failed');

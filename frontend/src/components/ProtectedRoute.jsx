@@ -23,7 +23,12 @@ export default function ProtectedRoute({ children, allowedRoles }) {
   const normalized = userRole?.toLowerCase().replace(/ /g, '-');
 
   // If the URL param doesn't match your actual role, kick them out
-  if (!allowedRoles.map(r => r.toLowerCase()).includes(normalized)) {
+  // if (!allowedRoles.map(r => r.toLowerCase()).includes(normalized)) {
+  //   return <Navigate to="/login" replace />;
+  // }
+  const allowedSlugs = allowedRoles
+    .map(r => r.toLowerCase().replace(/ /g, '-'));
+  if (!allowedSlugs.includes(normalized)) {
     return <Navigate to="/login" replace />;
   }
 
